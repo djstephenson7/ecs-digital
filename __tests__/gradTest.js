@@ -1,7 +1,3 @@
-function createMenuData(data) {
-
-}
-
 describe("menu Data Generator", () => {
     it("creates correct data structure ", () => {
       const data = [
