@@ -1,3 +1,5 @@
+require('../index.js')
+
 describe("menu Data Generator", () => {
     it("creates correct data structure ", () => {
       const data = [

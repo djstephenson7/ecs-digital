@@ -15,8 +15,15 @@ const object = [
   {title: "parent3", data: []},
 ]
 
+
+
 function createMenuData(data) {
-  console.log(data)
+  var parent1 = data.filter((data) => data.includes('parent1/')).map(function(d) { return d.replace('parent1/', ''); });
+  var parent2 = data.filter((data) => data.includes('parent2/')).map(function(d) { return d.replace('parent2/', ''); });
+  var parent3 = data.filter((data) => data.includes('parent3/')).map(function(d) { return d.replace('parent3/', ''); });
+  console.log(parent1, parent2, parent3)
+  // console.log(parent2)
+  // console.log(parent3)
 }
 
-createMenuData(data);
+createMenuData(data)
