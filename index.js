@@ -1,14 +1,3 @@
-const data = [
-  'parent1/parent1child',
-  'parent1/parent1child2',
-  'parent2/parent2child',
-  'parent2/parent2child2',
-  'parent1/parent1child3',
-  'parent3',
-  'parent3/parent3child1',
-  'parent4',
-];
-
 function createMenuData(data) {
   const parent1 = data.filter(data => data.includes('parent1/')).map(d => d.replace('parent1/', ''));
   const parent2 = data.filter(data => data.includes('parent2/')).map(d => d.replace('parent2/', ''));
@@ -21,6 +10,5 @@ function createMenuData(data) {
   return obj;
 }
 
-createMenuData(data);
 
 module.exports = createMenuData;
